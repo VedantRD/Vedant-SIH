@@ -1,36 +1,29 @@
+import { enableScreens } from 'react-native-screens';
+
 /**
  * @format
  * @flow
  */
-import React from 'react';
+import React, { Component } from 'react';
 import { Button, Container, Content } from 'native-base'
-import Login from './components/auth/Login'
-import Register from './components/auth/Register'
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
+import FarmerLogin from './components/auth/FarmerLogin'
+import BuyerRegister from './components/auth/BuyerRegister'
+import { SafeAreaView, StyleSheet, ScrollView, View, Text, StatusBar, } from 'react-native';
+// import { NavigationNativeContainer } from '@react-navigation/native';
+import FarmerNavigator from './components/routes/FarmerStackNavigator'
 
-const App = () => {
-  return (
-    <>
-      {/* <StatusBar barStyle="dark-content" /> */}
-      {/* <SafeAreaView>
-        <View>
-          <Login></Login>
-        </View>
-      </SafeAreaView> */}
-      <Container>
-        {/* <Login></Login> */}
-        <Register></Register>
-      </Container>
-    </>
-  );
-};
+export default class App extends Component {
+  render() {
+    return (
+      <>
+        <Container>
+          <FarmerNavigator></FarmerNavigator>
+          {/* <FarmerLogin></FarmerLogin> */}
+        </Container>
+      </>
+    )
+  }
+}
 
 const styles = StyleSheet.create({
   my: {
@@ -38,5 +31,3 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   }
 });
-
-export default App;
