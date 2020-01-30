@@ -3,6 +3,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 import FarmerLoginScreen from '../auth/FarmerLogin'
 import FarmerRegisterScreen from '../auth/FarmerRegister'
 import ShowWarehouses from '../screens/farmerScreens/ShowWarehouses'
+import WarehouseDetails from '../screens/farmerScreens/WarehouseDetails'
 
 const MainNavigator = createStackNavigator({
     FarmerLogin: {
@@ -15,6 +16,10 @@ const MainNavigator = createStackNavigator({
     },
     ShowWarehouses: {
         screen: ShowWarehouses,
+        navigationOptions: () => ({ headerShown: false })
+    },
+    WarehouseDetails: {
+        screen: WarehouseDetails,
         navigationOptions: () => ({ headerShown: false })
     }
 });

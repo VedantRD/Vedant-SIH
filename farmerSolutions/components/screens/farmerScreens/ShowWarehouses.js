@@ -11,20 +11,19 @@ export default class ShowWarehouses extends Component {
   render() {
     return (
       <Container>
-        <Header searchBar >
-          <Form>
-            <Item>
-              <InputGroup>
-                <Icon name='search' style={{ color: 'white' }} />
-                <Input placeholder='search' placeholderTextColor='white' />
-                <Icon name='ios-people' style={{ color: "white" }} />
-              </InputGroup>
-            </Item>
-          </Form>
+        <Header searchBar rounded style={{ backgroundColor: '#D9534f' }}>
+          <Item>
+            <Icon name="ios-search" />
+            <Input placeholder="Search here" />
+            <Icon name="ios-people" />
+          </Item>
+          <Button transparent>
+            <Text>Search</Text>
+          </Button>
         </Header>
         <Content>
           {warehouseData.map((item) => {
-            return (<WarehouseCard data={item} key={item.id}></WarehouseCard>)
+            return (<WarehouseCard navigation={this.props.navigation} data={item} key={item.id}></WarehouseCard>)
           })}
         </Content>
       </Container>
