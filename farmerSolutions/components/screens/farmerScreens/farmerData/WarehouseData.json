@@ -1,0 +1,67 @@
+[
+    {
+        "id": "1",
+        "name": "Vedant's Warehouse",
+        "space": 7050,
+        "availableSpace": 410,
+        "rent": 3.7,
+        "address": "Anandnagar, Nanded",
+        "rating": 4,
+        "distance": 3,
+        "contactNo": "8*******99",
+        "coldStorage": true,
+        "logo": "require('../../assets/warehouses/ware1.jpg')"
+    },
+    {
+        "id": "2",
+        "name": "Tohel's Warehouse",
+        "space": 4710,
+        "availableSpace": 600,
+        "rent": 3.7,
+        "address": "Anandnagar, Nanded",
+        "rating": 4,
+        "distance": 3,
+        "contactNo": "8*******99",
+        "coldStorage": true,
+        "logo": "require('../../assets/warehouses/ware1.jpg')"
+    },
+    {
+        "id": "3",
+        "name": "Jayesh's Warehouse",
+        "space": 6000,
+        "availableSpace": 2400,
+        "rent": 3.7,
+        "address": "Anandnagar, Nanded",
+        "rating": 4,
+        "distance": 3,
+        "contactNo": "8*******99",
+        "coldStorage": true,
+        "logo": "require('../../assets/warehouses/ware1.jpg')"
+    },
+    {
+        "id": "4",
+        "name": "Govt. Warehouse",
+        "space": 8300,
+        "availableSpace": 6410,
+        "rent": 3.7,
+        "address": "Anandnagar, Nanded",
+        "rating": 4,
+        "distance": 3,
+        "contactNo": "8*******99",
+        "coldStorage": true,
+        "logo": "require('../../assets/warehouses/ware1.jpg')"
+    },
+    {
+        "id": "5",
+        "name": "Best Warehouse",
+        "space": 3500,
+        "availableSpace": 0,
+        "rent": 3.7,
+        "address": "Anandnagar, Nanded",
+        "rating": 4,
+        "distance": 3,
+        "contactNo": "8*******99",
+        "coldStorage": true,
+        "logo": "require('../../assets/warehouses/ware1.jpg')"
+    }
+]
