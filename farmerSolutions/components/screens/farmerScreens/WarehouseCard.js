@@ -33,11 +33,11 @@ export class WarehouseCard extends Component {
                             </Button>
                         </Left>
                         <Right>
-                            <Text style={{}}>Total Area : {item.space} sq ft</Text>
                             <Text>
                                 <Text style={{}}>Available : </Text>
                                 <Text style={{ fontWeight: 'bold', color: 'green', fontSize: 16 }}>{item.availableSpace} Sq Ft</Text>
                             </Text>
+                            <Text style={{}}>Total Area : {item.space} sq ft</Text>
                         </Right>
                     </CardItem>
                 </Card>

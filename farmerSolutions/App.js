@@ -21,8 +21,8 @@ export default class App extends Component {
         <Container>
           {/* <FarmerNavigator></FarmerNavigator> */}
           {/* <FarmerLogin></FarmerLogin> */}
-          {/* <MainRouter></MainRouter> */}
-          <BuyerNavigator></BuyerNavigator>
+          <MainRouter></MainRouter>
+          {/* <BuyerNavigator></BuyerNavigator> */}
           {/* <GoodStatsCard></GoodStatsCard> */}
           {/* <AllGoods></AllGoods> */}
         </Container>

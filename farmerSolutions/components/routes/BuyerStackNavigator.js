@@ -2,8 +2,9 @@ import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import BuyerLogin from '../auth/BuyerLogin'
 import BuyerRegister from '../auth/BuyerRegister'
-import ShowFarmers from '../screens/buyerScreens/ShowFarmers'
-import FarmerDetails from '../screens/buyerScreens/FarmerDetails'
+import ShowGoods from '../screens/buyerScreens/ShowGoods'
+import RiceDetails from '../screens/buyerScreens/RiceDetails'
+import BuyerTabNavigator from '../routes/BuyerTabNavigator'
 
 const MainNavigator = createStackNavigator({
     BuyerLogin: {
@@ -14,14 +15,32 @@ const MainNavigator = createStackNavigator({
         screen: BuyerRegister,
         navigationOptions: () => ({ headerShown: false })
     },
-    ShowFarmers: {
-        screen: ShowFarmers,
+    ShowGoods: {
+        screen: ShowGoods,
         navigationOptions: () => ({ headerShown: false })
     },
-    FarmerDetails: {
-        screen: FarmerDetails,
+    RiceDetails: {
+        screen: RiceDetails,
         navigationOptions: () => ({ headerShown: false })
     },
+    BuyerTabNavigator: {
+        screen: BuyerTabNavigator,
+        navigationOptions: ({ navigation }) => ({
+            title: 'FarmerSolutions',
+            headerTitleStyle: {
+                fontWeight: 'bold',
+                textAlign: 'center',
+                flexGrow: 1,
+                color: 'white'
+            },
+            alignItems: 'center',
+            headerStyle: {
+                backgroundColor: '#3F51B5',
+                height: 70
+            },
+            headerShown: false
+        })
+    }
 
 });
 

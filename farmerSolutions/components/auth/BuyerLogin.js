@@ -25,7 +25,7 @@ export default class BuyerLogin extends Component {
                         </Item>
                     </Form>
                     <View style={{ marginTop: '40%' }}>
-                        <Button rounded danger iconLeft style={styles.loginButton} onPress={() => this.props.navigation.navigate('ShowFarmers')}>
+                        <Button rounded danger iconLeft style={styles.loginButton} onPress={() => this.props.navigation.navigate('BuyerTabNavigator')}>
                             <Icon name='person' />
                             <Text style={styles.loginText}>Login</Text>
                         </Button>

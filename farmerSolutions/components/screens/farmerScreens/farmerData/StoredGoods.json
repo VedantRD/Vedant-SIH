@@ -9,8 +9,7 @@
                 "address": "Anandnagar, Nanded",
                 "quantity": 50,
                 "status": false,
-                "rent": 3.7,
-                "src": "../../../android/app/src/main/res/drawable/onion.jpg"
+                "rent": 3.7
             },
             {
                 "goodname": "Cotton",
