@@ -5,22 +5,7 @@ import StarRating from 'react-native-star-rating'
 import { StyleSheet } from 'react-native'
 import { TouchableHighlight, TouchableOpacity } from 'react-native-gesture-handler';
 
-// const warehouseData = require('./farmerData/WarehouseData.json')
-
-
 export class WarehouseCard extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            starCount: 3.5
-        };
-    }
-
-    onStarRatingPress = (rating) => {
-        this.setState({
-            starCount: rating
-        });
-    }
     render() {
         const item = this.props.data
         // const nav =   
@@ -43,17 +28,15 @@ export class WarehouseCard extends Component {
                             <Button transparent>
                                 <StarRating disabled={false} maxStars={5} starSize={18}
                                     fullStarColor={'orange'}
-                                    rating={this.state.starCount}
-                                    selectedStar={(rating) => this.onStarRatingPress(rating)}
+                                    rating={item.rating}
                                 />
                             </Button>
-
                         </Left>
                         <Right>
-                            <Text style={{ textAlign: 'left' }}>Total Space : {item.space} sq ft</Text>
+                            <Text style={{}}>Total Area : {item.space} sq ft</Text>
                             <Text>
-                                <Text style={{ textAlign: 'right' }}>Available : </Text>
-                                <Text style={{ textAlign: 'right', fontWeight: 'bold', color: 'green', fontSize: 16 }}>{item.availableSpace} Sq Ft</Text>
+                                <Text style={{}}>Available : </Text>
+                                <Text style={{ fontWeight: 'bold', color: 'green', fontSize: 16 }}>{item.availableSpace} Sq Ft</Text>
                             </Text>
                         </Right>
                     </CardItem>

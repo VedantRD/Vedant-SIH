@@ -4,6 +4,7 @@ import { Container, Header, Content, Card, CardItem, Thumbnail, Text, Button, Ic
 import StarRating from 'react-native-star-rating'
 import WarehouseCard from './WarehouseCard';
 import { StyleSheet } from 'react-native'
+// import FarmerTabNavigator from '../../routes/FarmerTabNavigator';
 
 const warehouseData = require('./farmerData/WarehouseData.json')
 
@@ -11,7 +12,7 @@ export default class ShowWarehouses extends Component {
   render() {
     return (
       <Container>
-        <Header searchBar rounded style={{ backgroundColor: '#D9534f' }}>
+        <Header searchBar rounded style={{}}>
           <Item>
             <Icon name="ios-search" />
             <Input placeholder="Search here" />
@@ -26,6 +27,7 @@ export default class ShowWarehouses extends Component {
             return (<WarehouseCard navigation={this.props.navigation} data={item} key={item.id}></WarehouseCard>)
           })}
         </Content>
+        {/* <FarmerTabNavigator></FarmerTabNavigator> */}
       </Container>
     );
   }

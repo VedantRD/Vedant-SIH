@@ -4,6 +4,8 @@ import FarmerLoginScreen from '../auth/FarmerLogin'
 import FarmerRegisterScreen from '../auth/FarmerRegister'
 import ShowWarehouses from '../screens/farmerScreens/ShowWarehouses'
 import WarehouseDetails from '../screens/farmerScreens/WarehouseDetails'
+import FarmerTabNavigator from './FarmerTabNavigator'
+import FarmerProfile from '../screens/farmerScreens/FarmerProfile'
 
 const MainNavigator = createStackNavigator({
     FarmerLogin: {
@@ -21,6 +23,28 @@ const MainNavigator = createStackNavigator({
     WarehouseDetails: {
         screen: WarehouseDetails,
         navigationOptions: () => ({ headerShown: false })
+    },
+    FarmerProfile: {
+        screen: FarmerProfile,
+        navigationOptions: () => ({ headerShown: false })
+    },
+    FarmerTabNavigator: {
+        screen: FarmerTabNavigator,
+        navigationOptions: ({ navigation }) => ({
+            title: 'FarmerSolutions',
+            headerTitleStyle: {
+                fontWeight: 'bold',
+                textAlign: 'center',
+                flexGrow: 1,
+                color: 'white'
+            },
+            alignItems: 'center',
+            headerStyle: {
+                backgroundColor: '#3F51B5',
+                height: 70
+            },
+            headerShown: false
+        })
     }
 });
 
