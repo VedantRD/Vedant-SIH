@@ -10,40 +10,40 @@ export default class GoodStatsCard extends Component {
       <Card style={{}}>
         <CardItem header bordered>
           <Body>
-            <Text style={{ fontSize: 24, fontWeight: 'bold' }}>{item.goodname}</Text>
+            <Text style={{ fontSize: 20, fontWeight: 'bold' }}>{item.goodname}</Text>
           </Body>
           <Right>
-            <Text style={{ fontSize: 18, textAlign: 'right' }}>
-              {item.rent} Rs/50Kg
+            <Text style={{ fontSize: 17, textAlign: 'right' }}>
+              {item.rent} Rs/Quintal
           </Text>
           </Right>
         </CardItem>
         <CardItem>
           <Body>
-            <Text style={{ fontSize: 18 }}>
+            <Text style={{ fontSize: 17 }}>
               Stored At : {item.whereStored}
             </Text>
-            <Text style={{ fontSize: 18 }}>
+            <Text style={{ fontSize: 17 }}>
               Address : {item.address}
             </Text>
-            <Text style={{ fontSize: 18 }}>
+            <Text style={{ fontSize: 17 }}>
               Quantity : {item.quantity} Quintal
             </Text>
           </Body>
         </CardItem>
-        <CardItem footer>
-          <Left>
-            <Text style={{ fontSize: 18 }}>
+        <CardItem footer style={{ flexDirection: 'row' }}>
+          <Left style={{ flex: 1, marginLeft: -10 }}>
+            <Text style={{ fontSize: 17 }}>
               {item.staus ?
                 <Text style={{ color: success, fontWeight: 'bold' }}>Open For Sell</Text> :
                 <Text style={{ color: danger, fontWeight: 'bold' }}>Not Open For Sell</Text>}
             </Text>
           </Left>
-          {/* <Right> */}
-          <Button success bordered>
-            <Text style={{}}>Make Available</Text>
-          </Button>
-          {/* </Right> */}
+          <Right style={{ flex: 1 }}>
+            <Button success bordered>
+              <Text style={{}}>Make Available</Text>
+            </Button>
+          </Right>
         </CardItem>
         {/* <CardItem>
           

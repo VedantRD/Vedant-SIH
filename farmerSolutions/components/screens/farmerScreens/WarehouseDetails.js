@@ -36,34 +36,34 @@ export class WarehouseDetails extends Component {
                                 </Button>
                             </Left>
                             <Right>
-                                <Button block onPress={() => Alert.alert('Under Development', 'this feature is coming soon, Please stay tuned')} style={{backgroundColor:'#2c69db'}}>
-                                    <Text style={{ fontSize: 17,fontWeight:'900' }}>Book</Text>
+                                <Button block onPress={() => Alert.alert('Under Development', 'this feature is coming soon, Please stay tuned')} style={{ backgroundColor: '#2c69db' }}>
+                                    <Text style={{ fontSize: 17, fontWeight: '900' }}>Book</Text>
                                 </Button>
                             </Right>
                         </CardItem>
                         <CardItem header bordered style={{ justifyContent: 'flex-end', borderBottomWidth: 2, }}>
                             <Text>
-                                <Text style={{ color: '#069e31', fontWeight: 'bold', fontSize: 20, marginRight: 10 }}>{item.rent} Rs/50kg/month</Text>
+                                <Text style={{ color: '#069e31', fontWeight: 'bold', fontSize: 19, marginRight: 10 }}>{item.rent} Rs/Quintal</Text>
                             </Text>
                         </CardItem>
                         <CardItem header bordered style={{}}>
-                            <Text style={{ fontSize: 22, color: niceBlue, fontWeight: 'bold' }}>Details</Text>
+                            <Text style={{ fontSize: 21, color: niceBlue, fontWeight: 'bold' }}>Details</Text>
                         </CardItem>
                         <CardItem bordered style={{ borderBottomWidth: 2 }}>
                             <Body style={{}}>
-                                <Text style={{ fontSize: 18, paddingBottom: 4 }}>Available Now : {item.availableSpace} sqft</Text>
-                                <Text style={{ fontSize: 18, paddingVertical: 4 }}>Height : {item.height} feet</Text>
-                                <Text style={{ fontSize: 18, paddingVertical: 4 }}>Address : {item.address}</Text>
+                                <Text style={{ fontSize: 17, paddingBottom: 4 }}>Available Now : {item.availableSpace} sqft</Text>
+                                <Text style={{ fontSize: 17, paddingVertical: 4 }}>Height : {item.height} feet</Text>
+                                <Text style={{ fontSize: 17, paddingVertical: 4 }}>Address : {item.address}</Text>
                             </Body>
                         </CardItem>
                         <CardItem header bordered style={{}}>
-                            <Text style={{ fontSize: 22, color: niceBlue, fontWeight: 'bold' }}>Construction Details</Text>
+                            <Text style={{ fontSize: 21, color: niceBlue, fontWeight: 'bold' }}>Construction Details</Text>
                         </CardItem>
                         <CardItem>
                             <Body>
-                                <Text style={{ fontSize: 18, paddingBottom: 4 }}>Flooring : {item.flooring}</Text>
-                                <Text style={{ fontSize: 18, paddingVertical: 4 }}>Roof Type : {item.roofType}</Text>
-                                <Text style={{ fontSize: 18, paddingTop: 4 }}>Cold Storage Available : {item.coldStorage ? <Text style={{ fontSize: 18 }}>Yes</Text> : <Text style={{ fontSize: 18 }}>No</Text>}</Text>
+                                <Text style={{ fontSize: 17, paddingBottom: 4 }}>Flooring : {item.flooring}</Text>
+                                <Text style={{ fontSize: 17, paddingVertical: 4 }}>Roof Type : {item.roofType}</Text>
+                                <Text style={{ fontSize: 17, paddingTop: 4 }}>Cold Storage Available : {item.coldStorage ? <Text style={{ fontSize: 17 }}>Yes</Text> : <Text style={{ fontSize: 18 }}>No</Text>}</Text>
                             </Body>
                         </CardItem>
                     </Card>

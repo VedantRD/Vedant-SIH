@@ -23,8 +23,8 @@ export class WarehouseCard extends Component {
                             <Text style={{ fontWeight: 'bold', marginRight: 10, fontSize: 18 }}>{item.distance} Km</Text>
                         </Left>
                     </CardItem>
-                    <CardItem>
-                        <Left>
+                    <CardItem style={{ flexDirection: 'row' }}>
+                        <Left style={{ flex: 1 }}>
                             <Button transparent>
                                 <StarRating disabled={false} maxStars={5} starSize={18}
                                     fullStarColor={'orange'}
@@ -32,12 +32,12 @@ export class WarehouseCard extends Component {
                                 />
                             </Button>
                         </Left>
-                        <Right>
+                        <Right style={{ flex: 1 }}>
                             <Text>
                                 <Text style={{}}>Available : </Text>
-                                <Text style={{ fontWeight: 'bold', color: 'green', fontSize: 16 }}>{item.availableSpace} Sq Ft</Text>
+                                <Text style={{ fontWeight: 'bold', color: 'green' }}>{item.availableSpace} Sq Ft</Text>
                             </Text>
-                            <Text style={{}}>Total Area : {item.space} sq ft</Text>
+                            <Text style={{}}>Total Area : {item.space} Sq Ft</Text>
                         </Right>
                     </CardItem>
                 </Card>

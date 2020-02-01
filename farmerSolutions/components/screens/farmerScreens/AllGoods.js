@@ -20,13 +20,11 @@ export default class AllGoods extends Component {
         const danger = '#D9534f'
         return (
             <Container>
-                <Header style={{ }}>
+                <Header style={{}}>
                     <Body style={{ alignItems: 'center' }}>
                         <Title style={{ fontSize: 22, fontWeight: 'bold' }}>My Goods</Title>
                     </Body>
                 </Header>
-                {/* <Text>{ind}</Text> */}
-                {/* <Text>{FarmersData[ind].goods[0].price}</Text> */}
                 <Content padder>
                     {FarmersData[ind].goods.map((item, index) => <GoodStatsCard item={item} key={index}></GoodStatsCard>)}
                 </Content>

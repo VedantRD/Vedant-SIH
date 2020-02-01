@@ -31,9 +31,9 @@ export class RiceDetails extends Component {
 
                         <CardItem bordered style={{ justifyContent: 'flex-end' }}>
                             <Body style={{}}>
-                                <Text style={{ fontSize: 18, paddingBottom: 4 }}>Quantity Available:10 q</Text>
-                                <Text style={{ fontSize: 18, paddingVertical: 4 }}>Minimum Quantity:2 q</Text>
-                                <Text style={{ fontSize: 18, paddingVertical: 4 }}>Stored at :Jayesh's Warehouse </Text>
+                                <Text style={{ fontSize: 18, paddingBottom: 4 }}>Quantity Available : 10 q</Text>
+                                <Text style={{ fontSize: 18, paddingVertical: 4 }}>Minimum Quantity : 2 q</Text>
+                                <Text style={{ fontSize: 18, paddingVertical: 4 }}>Stored At : Jayesh's Warehouse </Text>
 
                             </Body>
 
@@ -51,19 +51,26 @@ export class RiceDetails extends Component {
                             </Right>
                         </CardItem>
                         <CardItem header bordered style={{}}>
-                            <Text style={{ fontSize: 22, color: 'black', fontWeight: 'bold' }}>Product Details</Text>
+                            <Text style={{ fontSize: 20, color: 'black', fontWeight: 'bold' }}>Description</Text>
                         </CardItem>
                         <CardItem bordered style={{ borderBottomWidth: 2 }}>
                             <Body style={{}}>
-                                <Text style={{ fontSize: 18, paddingBottom: 4 }}>Type: Kolam</Text>
-                                <Text style={{ fontSize: 18, paddingVertical: 4 }}>Cropped in: Rabi</Text>
-                                <Text style={{ fontSize: 18, paddingVertical: 4 }}>Moisture:2.7</Text>
-                                <Text style={{ fontSize: 18, paddingVertical: 4 }}>Product Cultivated at: Raichur</Text>
-                                <Text style={{ fontSize: 18, paddingVertical: 4 }}>Description:It is very ggod</Text>
+                                <Text style={{ fontSize: 18, paddingVertical: 4 }}>Top Quality Rice. It is Best Seller in the Market.</Text>
                             </Body>
                         </CardItem>
                         <CardItem header bordered style={{}}>
-                            <Text style={{ fontSize: 22, color: 'black', fontWeight: 'bold' }}>Farmer Details</Text>
+                            <Text style={{ fontSize: 20, color: 'black', fontWeight: 'bold' }}>Product Details</Text>
+                        </CardItem>
+                        <CardItem bordered style={{ borderBottomWidth: 2 }}>
+                            <Body style={{}}>
+                                <Text style={{ fontSize: 18, paddingBottom: 4 }}>Type : Kolam</Text>
+                                <Text style={{ fontSize: 18, paddingVertical: 4 }}>Cropped in : Rabi</Text>
+                                <Text style={{ fontSize: 18, paddingVertical: 4 }}>Moisture : 2.7</Text>
+                                <Text style={{ fontSize: 18, paddingVertical: 4 }}>Product Cultivated at : Raichur</Text>
+                            </Body>
+                        </CardItem>
+                        <CardItem header bordered style={{}}>
+                            <Text style={{ fontSize: 20, color: 'black', fontWeight: 'bold' }}>Farmer Details</Text>
                         </CardItem>
                         <CardItem>
                             <Body>

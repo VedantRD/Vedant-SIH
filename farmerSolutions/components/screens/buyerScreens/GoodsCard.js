@@ -14,7 +14,7 @@ export class GoodsCard extends Component {
                                 <Thumbnail source={require('../../assets/rice.jpg')} />
                                 <Body>
                                     <Text style={{ fontSize: 20, marginLeft: 3, fontWeight: 'bold' }}>Rice</Text>
-                                    <Text note style={{ marginLeft: 3 }}>10 q</Text>
+                                    <Text note style={{ marginLeft: 3 }}>Basmati Rice</Text>
                                 </Body>
                             </Left>
                             <Right>
@@ -33,7 +33,7 @@ export class GoodsCard extends Component {
                         <CardItem>
                             <Text>
                                 Taste the goodness of rice cultiavted without any chemical fertilizer
-                        </Text>
+                            </Text>
                         </CardItem>
                     </Card>
                 </TouchableOpacity>
@@ -44,7 +44,7 @@ export class GoodsCard extends Component {
                                 <Thumbnail source={require('../../assets/onion.jpg')} />
                                 <Body>
                                     <Text style={{ fontSize: 20, marginLeft: 3, fontWeight: 'bold' }}>Onion</Text>
-                                    <Text note style={{ marginLeft: 3 }}>5 q</Text>
+                                    <Text note style={{ marginLeft: 3 }}>Red Onion</Text>
                                 </Body>
                             </Left>
                             <Right>
@@ -64,7 +64,7 @@ export class GoodsCard extends Component {
                             <Text>
                                 All fresh and Only Organic Vegetables.
                                 Best in the Market
-                    </Text>
+                            </Text>
                         </CardItem>
                     </Card>
                 </TouchableOpacity>
@@ -75,7 +75,7 @@ export class GoodsCard extends Component {
                                 <Thumbnail source={require('../../assets/rice.jpg')} />
                                 <Body>
                                     <Text style={{ fontSize: 20, marginLeft: 3, fontWeight: 'bold' }}>Rice</Text>
-                                    <Text note style={{ marginLeft: 3 }}>10 q</Text>
+                                    <Text note style={{ marginLeft: 3 }}>Kolam</Text>
                                 </Body>
                             </Left>
                             <Right>
@@ -94,7 +94,7 @@ export class GoodsCard extends Component {
                         <CardItem>
                             <Text>
                                 Taste the goodness of rice cultiavted without any chemical fertilizer
-                        </Text>
+                            </Text>
                         </CardItem>
                     </Card>
                 </TouchableOpacity>
@@ -105,7 +105,7 @@ export class GoodsCard extends Component {
                                 <Thumbnail source={require('../../assets/onion.jpg')} />
                                 <Body>
                                     <Text style={{ fontSize: 20, marginLeft: 3, fontWeight: 'bold' }}>Onion</Text>
-                                    <Text note style={{ marginLeft: 3 }}>5 q</Text>
+                                    <Text note style={{ marginLeft: 3 }}>White Onion</Text>
                                 </Body>
                             </Left>
                             <Right>
@@ -125,7 +125,7 @@ export class GoodsCard extends Component {
                             <Text>
                                 All fresh and Only Organic Vegetables.
                                 Best in the Market
-                    </Text>
+                            </Text>
                         </CardItem>
                     </Card>
                 </TouchableOpacity>

@@ -14,7 +14,7 @@ export default class ProfileScreen extends React.Component {
                     </Text>
                     </Body>
                     <Right>
-                        <Button onPress={() => {
+                        <Button transparent onPress={() => {
                             this.props.navigation.navigate({ routeName: 'Home' })
                         }} >
                             <Text style={{ textAlignVertical: 'center' }}>Log Out</Text>
