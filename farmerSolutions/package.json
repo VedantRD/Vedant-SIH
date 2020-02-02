@@ -29,7 +29,13 @@
     "react-native-vector-icons": "^6.6.0",
     "react-navigation": "^4.0.10",
     "react-navigation-stack": "^2.0.16",
-    "react-navigation-tabs": "^2.6.2"
+    "react-navigation-tabs": "^2.6.2",
+    "react-tooltip": "^3.11.3",
+    "react-native-slider": "^0.11.0",
+    "react-native-svg": "^11.0.1",
+    "react-native-svg-charts": "^5.3.0",
+    "react-native-pie-chart": "^1.0.13",
+    "react-native-chart-kit": "^4.4.1"
   },
   "devDependencies": {
     "@babel/core": "7.8.3",

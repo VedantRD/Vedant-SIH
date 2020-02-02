@@ -25,7 +25,7 @@ export default class WarehouseLogin extends Component {
                         </Item>
                     </Form>
                     <View style={{ marginTop: '40%' }}>
-                        <Button rounded danger iconLeft style={styles.loginButton}>
+                        <Button rounded danger iconLeft style={styles.loginButton} onPress={() => this.props.navigation.navigate('WareTabNavigator')}>
                             <Icon name='person' />
                             <Text style={styles.loginText}>Login</Text>
                         </Button>

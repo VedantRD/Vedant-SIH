@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native'
 import { Header, Left, Button, Icon, Body, Title, Content, Footer, FooterTab, Container, Form, Item, Label, Input, Text, View } from 'native-base';
 import FarmerNavigator from './FarmerStackNavigator'
 import BuyerNavigator from './BuyerStackNavigator'
-
+import WarehouseOwnerNavigator from './WarehouseOwnerStackNavigator'
 
 export default class MainRouter extends Component {
 
@@ -38,7 +38,7 @@ export default class MainRouter extends Component {
                     <FarmerNavigator></FarmerNavigator> :
                     this.state.role === "buyer" ?
                         <BuyerNavigator></BuyerNavigator> :
-                        <FarmerNavigator></FarmerNavigator>
+                        <WarehouseOwnerNavigator></WarehouseOwnerNavigator>
         )
     }
 }
