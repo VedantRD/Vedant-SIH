@@ -8,10 +8,10 @@ export default class BuyerLogin extends Component {
             <Container>
                 <Content padder>
                     <Text style={styles.loginHeader}>Login</Text>
-                    <Button transparent>
+                    <Button transparent onPress={() => this.props.navigation.navigate('BuyerRegister')}>
                         <Text>
                             <Text style={styles.registerText}>Dont have Account ?</Text>
-                            <Text style={{ color: 'red', fontWeight: 'bold' }}> Register</Text>
+                            <Text style={{ color: 'red', fontWeight: 'bold' }}> Register </Text>
                         </Text>
                     </Button>
                     <Form style={{ padding: "5%", marginTop: '10%' }}>
@@ -21,7 +21,7 @@ export default class BuyerLogin extends Component {
                         </Item>
                         <Item floatingLabel style={{ padding: 7, borderBottomWidth: 2 }}>
                             <Label>Password</Label>
-                            <Input />
+                            <Input secureTextEntry ={true}/>
                         </Item>
                     </Form>
                     <View style={{ marginTop: '40%' }}>

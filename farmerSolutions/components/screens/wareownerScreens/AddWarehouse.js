@@ -10,11 +10,15 @@ export default class IconTextboxExample extends Component {
             value: 0.2
         };
     }
-    onValueChange(value: string) {
-        this.setState({
-            selected: value
-        });
-    }
+
+    // componentDidUpdate() {
+    //     onValueChange = (value: string) => {
+    //         this.setState({
+    //             selected: value
+    //         });
+    //     }
+    // }
+
     render() {
         return (
             <Container>
@@ -33,7 +37,7 @@ export default class IconTextboxExample extends Component {
                             iosIcon={<Icon name="arrow-dropdown-circle" style={{ color: "#007aff", fontSize: 25 }} />}
                             style={{ width: undefined }}
                             selectedValue={this.state.selected}
-                            onValueChange={this.onValueChange.bind(this)}
+                        // onValueChange={this.onValueChange}
                         >
                             <Picker.Item label="Warehouse - 1" value="key0" />
                             <Picker.Item label="Warehouse - 2" value="key1" />
@@ -44,7 +48,7 @@ export default class IconTextboxExample extends Component {
                         <Label style={{ fontWeight: 'bold', marginBottom: 7 }}>Space:</Label>
                         <Slider
                             value={this.state.value}
-                            onValueChange={value => this.setState({ value })}
+                        // onValueChange={value => this.setState({ value })}
                         />
                         <Text style={{ textAlign: 'right' }}>{parseInt(this.state.value * 100.00)} sq.ft</Text>
 

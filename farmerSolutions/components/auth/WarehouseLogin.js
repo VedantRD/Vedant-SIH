@@ -8,7 +8,7 @@ export default class WarehouseLogin extends Component {
             <Container>
                 <Content padder>
                     <Text style={styles.loginHeader}>Login</Text>
-                    <Button transparent>
+                    <Button transparent onPress={() => this.props.navigation.navigate('WareownerRegister')}>
                         <Text>
                             <Text style={styles.registerText}>Dont have Account ?</Text>
                             <Text style={{ color: 'red', fontWeight: 'bold' }}> Register</Text>
@@ -21,7 +21,7 @@ export default class WarehouseLogin extends Component {
                         </Item>
                         <Item floatingLabel style={{ padding: 7, borderBottomWidth: 2 }}>
                             <Label>Password</Label>
-                            <Input />
+                            <Input secureTextEntry ={true}/>
                         </Item>
                     </Form>
                     <View style={{ marginTop: '40%' }}>

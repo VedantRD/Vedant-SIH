@@ -6,6 +6,8 @@ import ShowWarehouses from '../screens/farmerScreens/ShowWarehouses'
 import WarehouseDetails from '../screens/farmerScreens/WarehouseDetails'
 import FarmerTabNavigator from './FarmerTabNavigator'
 import FarmerProfile from '../screens/farmerScreens/FarmerProfile'
+import BookDetails from '../screens/farmerScreens/BookDetails'
+import TransportOptions from '../screens/farmerScreens/TransportOptions'
 
 const MainNavigator = createStackNavigator({
     FarmerLogin: {
@@ -26,6 +28,14 @@ const MainNavigator = createStackNavigator({
     },
     FarmerProfile: {
         screen: FarmerProfile,
+        navigationOptions: () => ({ headerShown: false })
+    },
+    BookDetails: {
+        screen: BookDetails,
+        navigationOptions: () => ({ headerShown: false })
+    },
+    TransportOptions: {
+        screen: TransportOptions,
         navigationOptions: () => ({ headerShown: false })
     },
     FarmerTabNavigator: {

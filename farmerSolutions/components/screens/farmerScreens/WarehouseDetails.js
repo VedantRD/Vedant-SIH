@@ -36,7 +36,7 @@ export class WarehouseDetails extends Component {
                                 </Button>
                             </Left>
                             <Right>
-                                <Button block onPress={() => Alert.alert('Under Development', 'this feature is coming soon, Please stay tuned')} style={{ backgroundColor: '#2c69db' }}>
+                                <Button block onPress={() => this.props.navigation.navigate('BookDetails')} style={{ backgroundColor: '#2c69db' }}>
                                     <Text style={{ fontSize: 17, fontWeight: '900' }}>Book</Text>
                                 </Button>
                             </Right>
@@ -68,7 +68,7 @@ export class WarehouseDetails extends Component {
                         </CardItem>
                     </Card>
                 </Content>
-            </Container>
+            </Container >
         )
     }
 }

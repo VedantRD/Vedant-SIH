@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Header, Content, Card, CardItem, Thumbnail, List, ListItem, Text, Button, Icon, Left, Body, Right, Title, InputGroup, Input, Form, Item } from 'native-base';
+import { Container, Header, Content, Card, CardItem, Thumbnail, List, ListItem, Button, Icon, Left, Body, Right, Title, Text, InputGroup, Input, Form, Item } from 'native-base';
 import {
     LineChart,
     BarChart,
@@ -7,9 +7,11 @@ import {
     ContributionGraph,
     StackedBarChart
 } from "react-native-chart-kit";
+import { PieChart } from 'react-native-svg-charts'
+import Pie from './PieChart'
 import ReactTooltip from 'react-tooltip';
 import { AppRegistry, StyleSheet, ScrollView, StatusBar, TextInput, Dimensions, View } from 'react-native';
-import PieChart from 'react-native-pie-chart';
+// import PieChart from 'react-native-pie-chart';
 import { bool } from 'prop-types';
 const screenWidth = Dimensions.get("window").width;
 
@@ -65,9 +67,11 @@ const chartConfig = {
 export default class test extends Component {
 
     render() {
+        
+
         const chart_wh = 200
         const series = [40, 10, 20, 15, 10]
-        const sliceColor = ['#F44336', '#2196F3', '#FFEB3B', '#4CAF50', '#808080']
+        const sliceColor = ['#F44336', '#2196F3', '#cf69f5', '#4CAF50', '#808080']
 
         return (
             <Container>
@@ -81,30 +85,31 @@ export default class test extends Component {
                         <ListItem itemDivider>
                             <Icon name="ios-pie" style={{ fontSize: 22 }} />
                             <Left>
-                                <Text style={styles.title}>Current Occupancy</Text>
+                                <Text style={styles.title}>Current Occupancy (%)</Text>
                             </Left>
                         </ListItem>
 
                         <ListItem>
-                            <View style={{ alignItems: 'flex-start', ...styles.container }}>
-                                <StatusBar
+                            {/* <View style={{ alignItems: 'flex-start', ...styles.container }}> */}
+                                {/* <StatusBar
                                     hidden={false}
-                                />
-                                {/* <Text style={styles.title}>Basic</Text>
-                    <PieChart
-                        chart_wh={chart_wh}
-                        series={series}
-                        sliceColor={sliceColor}
-                    /> */}
-                                <PieChart
+                                /> */}
+                                {/* <Text style={styles.title}>Basic</Text> */}
+                                {/* <PieChart
+                                    chart_wh={chart_wh}
+                                    series={series}
+                                    sliceColor={sliceColor}
+                                /> */}
+                                {/* <PieChart
                                     chart_wh={chart_wh}
                                     series={series}
                                     sliceColor={sliceColor}
                                     doughnut={true}
                                     coverRadius={0.60}
                                     coverFill={'#FFF'}
-                                />
-                            </View>
+                                /> */}
+                                <Pie />
+                            {/* </View> */}
                             <View style={{ alignItems: 'flex-end' }}>
                                 <List>
                                     <ListItem style={styles.itemlist}>

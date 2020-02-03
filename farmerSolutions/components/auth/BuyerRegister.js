@@ -7,18 +7,30 @@ export default class BuyerRegister extends Component {
         return (
             <Container>
                 <Content padder>
-                    <Text style={styles.registerHeader}>Register</Text>
+                    <Text style={styles.registerHeader} >Register</Text>
                     <Form style={{ paddingVertical: "5%", marginTop: '10%' }}>
-                        <Item style={{ padding: 3, borderBottomWidth: 2 }}>
-                            <Label>Username</Label>
+                        <Item floatingLabel style={{ padding: 3, borderBottomWidth: 2 }}>
+                            <Label>UserName</Label>
                             <Input />
                         </Item>
-                        <Item style={{ padding: 3, borderBottomWidth: 2 }}>
+                        <Item floatingLabel style={{ padding: 3, borderBottomWidth: 2 }}>
                             <Label>Password</Label>
+                            <Input secureTextEntry ={true}/>
+                        </Item>
+                        <Item floatingLabel style={{ padding: 3, borderBottomWidth: 2 }}>
+                            <Label>E-mail</Label>
+                            <Input />
+                        </Item>
+                        <Item floatingLabel style={{ padding: 3, borderBottomWidth: 2 }}>
+                            <Label>Ph No.</Label>
+                            <Input />
+                        </Item>
+                        <Item floatingLabel style={{ padding: 3, borderBottomWidth: 2 }}>
+                            <Label>Gender</Label>
                             <Input />
                         </Item>
                     </Form>
-                    <View style={{ marginTop: '50%' }}>
+                    <View floatingLabel style={{ marginTop: '30%' }}>
                         <Button rounded danger iconLeft style={styles.registerButton}>
                             <Icon name='person' />
                             <Text style={styles.loginText}>Register</Text>

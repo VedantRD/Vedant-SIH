@@ -1,24 +1,36 @@
+import React, { Component } from 'react'
 import { StyleSheet } from 'react-native'
 import { Header, Left, Button, Icon, Body, Title, Content, Footer, FooterTab, Container, Form, Item, Label, Input, Text, View } from 'native-base';
-import React, { Component } from 'react'
 
-export default class FarmerRegister extends Component {
+export default class BuyerRegister extends Component {
     render() {
         return (
             <Container>
-                <Content padder>
-                    <Text style={styles.registerHeader}>Register</Text>
+                <Content padder style={{ marginRight: 5 }}>
+                    <Text style={styles.registerHeader} >Register</Text>
                     <Form style={{ paddingVertical: "5%", marginTop: '10%' }}>
-                        <Item style={{ padding: 3, borderBottomWidth: 2 }}>
-                            <Label>Username</Label>
+                        <Item floatingLabel style={{ padding: 3, borderBottomWidth: 2 }}>
+                            <Label>UserName</Label>
                             <Input />
                         </Item>
-                        <Item style={{ padding: 3, borderBottomWidth: 2 }}>
+                        <Item floatingLabel style={{ padding: 3, borderBottomWidth: 2 }}>
                             <Label>Password</Label>
+                            <Input secureTextEntry={true} />
+                        </Item>
+                        <Item floatingLabel style={{ padding: 3, borderBottomWidth: 2 }}>
+                            <Label>Aadhar No.</Label>
+                            <Input />
+                        </Item>
+                        <Item floatingLabel style={{ padding: 3, borderBottomWidth: 2 }}>
+                            <Label>Ph No.</Label>
+                            <Input />
+                        </Item>
+                        <Item floatingLabel style={{ padding: 3, borderBottomWidth: 2 }}>
+                            <Label>Gender</Label>
                             <Input />
                         </Item>
                     </Form>
-                    <View style={{ marginTop: '50%' }}>
+                    <View floatingLabel style={{ marginTop: '30%' }}>
                         <Button rounded danger iconLeft style={styles.registerButton}>
                             <Icon name='person' />
                             <Text style={styles.loginText}>Register</Text>
@@ -61,3 +73,5 @@ const styles = StyleSheet.create({
 
     }
 });
+
+
