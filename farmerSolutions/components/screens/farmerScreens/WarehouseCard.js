@@ -19,7 +19,6 @@ export class WarehouseCard extends Component {
                                 <Text style={{ fontSize: 18, fontWeight: 'bold' }}>{item.name}</Text>
                                 <Text style={{ fontSize: 16 }} note>{item.address}</Text>
                             </Body>
-                            {/* <Icon name="dots-vertical"></Icon> */}
                             <Text style={{ fontWeight: 'bold', marginRight: 10, fontSize: 18 }}>{item.distance} Km</Text>
                         </Left>
                     </CardItem>
