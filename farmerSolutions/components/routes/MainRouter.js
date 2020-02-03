@@ -13,34 +13,35 @@ export default class MainRouter extends Component {
 
     render() {
         return (
-            this.state.role === "" ?
-                <>
-                    <Container style={{
-                        flex: 1,
-                        flexDirection: 'column',
-                        justifyContent: 'space-between',
-                        marginVertical: 200
-                    }}>
-                        {/* <Content padder> */}
-                        <Button rounded danger onPress={() => this.setState({ role: 'farmer' })} style={{ margin: 25, justifyContent: 'center', marginHorizontal: 60 }}>
-                            <Text style={{ fontSize: 19 }}>Farmer</Text>
-                        </Button>
-                        <Button rounded danger onPress={() => this.setState({ role: 'buyer' })} style={{ margin: 25, justifyContent: 'center', marginHorizontal: 60 }}>
-                            <Text style={{ fontSize: 19 }}>Buyer</Text>
-                        </Button>
-                        <Button danger rounded onPress={() => this.setState({ role: 'warehouseOwner' })} style={{ margin: 25, justifyContent: 'center', marginHorizontal: 60 }}>
-                            <Text style={{ fontSize: 19 }}>Warehouse Owner</Text>
-                        </Button>
-                        {/* </Content> */}
-                    </Container>
-                </> :
-                this.state.role === "farmer" ?
-                    <FarmerNavigator></FarmerNavigator> :
-                    this.state.role === "buyer" ?
-                        <BuyerNavigator></BuyerNavigator> :
-                        <WarehouseOwnerNavigator></WarehouseOwnerNavigator>
+            // this.state.role === "" ?
+            <>
+                <Container style={{
+                    flex: 1,
+                    flexDirection: 'column',
+                    justifyContent: 'space-evenly',
+                    paddingVertical: 200
+                    // marginVertical: 200,
+                }}>
+                    <Button rounded danger onPress={() => this.props.navigation.navigate('FarmerStackNavigator')} style={{ margin: 25, justifyContent: 'center', marginHorizontal: 60 }}>
+                        <Text style={{ fontSize: 19 }}>Farmer</Text>
+                    </Button>
+                    <Button rounded danger onPress={() => this.props.navigation.navigate('BuyerStackNavigator')} style={{ margin: 25, justifyContent: 'center', marginHorizontal: 60 }}>
+                        <Text style={{ fontSize: 19 }}>Buyer</Text>
+                    </Button>
+                    <Button danger rounded onPress={() => this.props.navigation.navigate('WarehouseOwnerStackNavigator')} style={{ margin: 25, justifyContent: 'center', marginHorizontal: 60 }}>
+                        <Text style={{ fontSize: 19 }}>Warehouse Owner</Text>
+                    </Button>
+                </Container>
+            </>
+
         )
     }
 }
 
+{/*  :
+                this.state.role === "farmer" ?
+                    <FarmerNavigator></FarmerNavigator> :
+                    this.state.role === "buyer" ?
+                        <BuyerNavigator></BuyerNavigator> :
+                        <WarehouseOwnerNavigator></WarehouseOwnerNavigator> */}
 const styles = StyleSheet.create({})

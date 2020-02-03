@@ -9,15 +9,15 @@ import MainRouter from './components/routes/MainRouter';
 import TransportOptions from './components/screens/farmerScreens/TransportOptions';
 // import FormBase from './components/screens/wareownerScreens/FormBase';
 import BookDetails from './components/screens/farmerScreens/BookDetails'
+import MainStackNavigator from './components/routes/MainStackNavigator'
 const niceBlue = '#1E8AE9'
 export default class App extends Component {
   render() {
     return (
-      <Container>
-        <MainRouter></MainRouter>
-        {/* <TransportOptions></TransportOptions> */}
-        {/* <BookDetails></BookDetails> */}
-      </Container>
+      <>
+        {console.log('vedant')}
+        <MainStackNavigator></MainStackNavigator>
+      </>
     )
   }
 }
