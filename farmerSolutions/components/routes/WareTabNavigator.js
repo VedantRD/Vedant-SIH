@@ -6,12 +6,13 @@ import { Button, Text, Icon, Footer, FooterTab } from "native-base";
 import AddWarehouse from '../screens/wareownerScreens/AddWarehouse'
 import WareDetails from '../screens/wareownerScreens/WareDetails';
 import FarmerProfile from '../screens/farmerScreens/FarmerProfile';
+import DashboardStack from '../routes//DashboardStack'
 import screen from 'react-native';
 const danger = '#D9534f'
 
 BTabNavigator = createBottomTabNavigator(
     {
-        WareDetails: WareDetails,
+        DashboardStackWala: DashboardStack,
         AddWarehouses: AddWarehouse,
         FarmerProfile: FarmerProfile
     },
@@ -24,9 +25,9 @@ BTabNavigator = createBottomTabNavigator(
                         <Button
                             vertical
                             active={props.navigation.state.index === 0}
-                            onPress={() => props.navigation.navigate("WareDetails")}>
+                            onPress={() => props.navigation.navigate("DashboardStackWala")}>
                             <Icon name="ios-home" />
-                            <Text>My Warehouse</Text>
+                            <Text>Dashboard</Text>
                         </Button>
                         <Button
                             vertical

@@ -67,7 +67,7 @@ const chartConfig = {
 export default class test extends Component {
 
     render() {
-        
+
 
         const chart_wh = 200
         const series = [40, 10, 20, 15, 10]
@@ -76,9 +76,15 @@ export default class test extends Component {
         return (
             <Container>
                 <Header searchBar rounded style={{}}>
-                    <Body style={{ alignItems: 'center' }}>
-                        <Title style={{ fontSize: 22, fontWeight: 'bold' }}>Warehouse - 1</Title>
+                    <Left>
+                        <Button transparent onPress={() => this.props.navigation.goBack()}>
+                            <Icon name='arrow-back' />
+                        </Button>
+                    </Left>
+                    <Body style={{ alignItems: 'center', alignItems: 'flex-start' }}>
+                        <Title style={{ fontSize: 22, fontWeight: 'bold', paddingLeft: 15 }}>Warehouse - 1</Title>
                     </Body>
+                    {/* <Right /> */}
                 </Header>
                 <Content>
                     <List>
@@ -91,16 +97,16 @@ export default class test extends Component {
 
                         <ListItem>
                             {/* <View style={{ alignItems: 'flex-start', ...styles.container }}> */}
-                                {/* <StatusBar
+                            {/* <StatusBar
                                     hidden={false}
                                 /> */}
-                                {/* <Text style={styles.title}>Basic</Text> */}
-                                {/* <PieChart
+                            {/* <Text style={styles.title}>Basic</Text> */}
+                            {/* <PieChart
                                     chart_wh={chart_wh}
                                     series={series}
                                     sliceColor={sliceColor}
                                 /> */}
-                                {/* <PieChart
+                            {/* <PieChart
                                     chart_wh={chart_wh}
                                     series={series}
                                     sliceColor={sliceColor}
@@ -108,7 +114,7 @@ export default class test extends Component {
                                     coverRadius={0.60}
                                     coverFill={'#FFF'}
                                 /> */}
-                                <Pie />
+                            <Pie />
                             {/* </View> */}
                             <View style={{ alignItems: 'flex-end' }}>
                                 <List>
