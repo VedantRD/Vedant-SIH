@@ -11,6 +11,7 @@ import TransportOptions from './components/screens/farmerScreens/TransportOption
 import BookDetails from './components/screens/farmerScreens/BookDetails'
 import MainStackNavigator from './components/routes/MainStackNavigator'
 import PaymentDetails from './components/screens/farmerScreens/PaymentDetails';
+import LanguageStackNavigator from './components/routes/LanguageStackNavigator'
 const niceBlue = '#1E8AE9'
 // YellowBox.ignoreWarnings(['Warning:...'])
 export default class App extends Component {
@@ -19,7 +20,8 @@ export default class App extends Component {
       <>
         {/* {console.log('vedant')} */}
         {/* <MainStackNavigator></MainStackNavigator> */}
-        <PaymentDetails></PaymentDetails>
+        {/* <PaymentDetails></PaymentDetails> */}
+        <LanguageStackNavigator></LanguageStackNavigator>
       </>
     )
   }

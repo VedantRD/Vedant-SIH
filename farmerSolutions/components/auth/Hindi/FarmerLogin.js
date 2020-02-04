@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 
 const userData = require('./userData.json')
 
-export default class WarehouseLogin extends Component {
+export default class FarmerLogin extends Component {
 
     state = {
         username: "",
@@ -24,7 +24,7 @@ export default class WarehouseLogin extends Component {
             <Container>
                 <Content padder>
                     <Text style={styles.loginHeader}>Login</Text>
-                    <Button transparent onPress={() => this.props.navigation.navigate('WarehouseRegister')}>
+                    <Button transparent onPress={() => this.props.navigation.navigate('FarmerRegister')}>
                         <Text>
                             <Text style={styles.registerText}>Dont have Account ?</Text>
                             <Text style={{ color: 'red', fontWeight: 'bold' }}> Register</Text>
@@ -41,9 +41,9 @@ export default class WarehouseLogin extends Component {
                         </Item>
                     </Form>
                     <View style={{ marginTop: '40%' }}>
-                        <Button rounded danger iconLeft style={styles.loginButton} onPress={() => this.userAuth() ? this.props.navigation.navigate('WareTabNavigator') : Alert.alert('Login Failed', 'Invalid Username or Password')}>
+                        <Button rounded danger iconLeft style={styles.loginButton} onPress={() => this.userAuth() ? this.props.navigation.navigate('FarmerTabNavigator', { name: this.state.username }) : Alert.alert('Invalid')}>
                             <Icon name='person' />
-                            <Text style={styles.loginText}>Login</Text>
+                            <Text style={styles.loginText}>लोगिन्</Text>
                         </Button>
                     </View>
                 </Content>

@@ -23,7 +23,7 @@ export default class WarehouseLogin extends Component {
         return (
             <Container>
                 <Content padder>
-                    <Text style={styles.loginHeader}>Login</Text>
+                    <Text style={styles.loginHeader}>लोगिन्</Text>
                     <Button transparent onPress={() => this.props.navigation.navigate('WarehouseRegister')}>
                         <Text>
                             <Text style={styles.registerText}>Dont have Account ?</Text>
@@ -41,7 +41,7 @@ export default class WarehouseLogin extends Component {
                         </Item>
                     </Form>
                     <View style={{ marginTop: '40%' }}>
-                        <Button rounded danger iconLeft style={styles.loginButton} onPress={() => this.userAuth() ? this.props.navigation.navigate('WareTabNavigator') : Alert.alert('Login Failed', 'Invalid Username or Password')}>
+                        <Button rounded danger iconLeft style={styles.loginButton} onPress={() => this.userAuth() ? this.props.navigation.navigate('WareTabNavigator') : Alert.alert('Invalid')}>
                             <Icon name='person' />
                             <Text style={styles.loginText}>Login</Text>
                         </Button>

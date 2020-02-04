@@ -1,8 +1,24 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet, Alert } from 'react-native'
 import { Header, Left, Button, Icon, Body, Title, Content, Footer, FooterTab, Container, Form, Item, Label, Input, Text, View } from 'native-base';
 import React, { Component } from 'react'
 
+const userData = require('./userData.json')
+
 export default class BuyerLogin extends Component {
+
+    state = {
+        username: "",
+        password: "",
+    }
+    //user
+    userAuth = () => {
+        const users = userData.map((data) => data.username)
+        const passes = userData.map((data) => data.password)
+        if ((Object.values(users).indexOf(this.state.username) > -1) && (Object.values(passes).indexOf(this.state.password) > -1)) {
+            return true
+        }
+    }
+
     render() {
         return (
             <Container>
@@ -11,21 +27,21 @@ export default class BuyerLogin extends Component {
                     <Button transparent onPress={() => this.props.navigation.navigate('BuyerRegister')}>
                         <Text>
                             <Text style={styles.registerText}>Dont have Account ?</Text>
-                            <Text style={{ color: 'red', fontWeight: 'bold' }}> Register </Text>
+                            <Text style={{ color: 'red', fontWeight: 'bold' }}> Register</Text>
                         </Text>
                     </Button>
                     <Form style={{ padding: "5%", marginTop: '10%' }}>
                         <Item floatingLabel style={{ padding: 7, borderBottomWidth: 2 }}>
                             <Label>Username</Label>
-                            <Input />
+                            <Input onChangeText={(username) => this.setState({ username })} />
                         </Item>
                         <Item floatingLabel style={{ padding: 7, borderBottomWidth: 2 }}>
                             <Label>Password</Label>
-                            <Input secureTextEntry ={true}/>
+                            <Input secureTextEntry={true} onChangeText={(password) => this.setState({ password })} />
                         </Item>
                     </Form>
                     <View style={{ marginTop: '40%' }}>
-                        <Button rounded danger iconLeft style={styles.loginButton} onPress={() => this.props.navigation.navigate('BuyerTabNavigator')}>
+                        <Button rounded danger iconLeft style={styles.loginButton} onPress={() => this.userAuth() ? this.props.navigation.navigate('BuyerTabNavigator') : Alert.alert('Login Failed', 'Invalid Username or Password')}>
                             <Icon name='person' />
                             <Text style={styles.loginText}>Login</Text>
                         </Button>
@@ -66,3 +82,4 @@ const styles = StyleSheet.create({
 
     }
 });
+
