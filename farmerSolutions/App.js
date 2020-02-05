@@ -13,7 +13,7 @@ import MainStackNavigator from './components/routes/MainStackNavigator'
 import PaymentDetails from './components/screens/farmerScreens/PaymentDetails';
 import LanguageStackNavigator from './components/routes/LanguageStackNavigator'
 const niceBlue = '#1E8AE9'
-// YellowBox.ignoreWarnings(['Warning:...'])
+YellowBox.ignoreWarnings(['Warning:...'])
 export default class App extends Component {
   render() {
     return (
@@ -26,7 +26,7 @@ export default class App extends Component {
     )
   }
 }
-// console.disableYellowBox = true
+console.disableYellowBox = true
 
 const styles = StyleSheet.create({
   my: {

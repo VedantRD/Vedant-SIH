@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Image } from 'react-native';
+import { Image, Alert } from 'react-native';
 import { Container, Header, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body, Title, View, Right } from 'native-base';
 export default class GoodStatsCard extends Component {
   render() {
@@ -40,7 +40,7 @@ export default class GoodStatsCard extends Component {
             </Text>
           </Left>
           <Right style={{ flex: 1 }}>
-            <Button success bordered>
+            <Button success bordered onPress={() => Alert.alert('Sure ?', 'This will make the good available for buyer to buy')}>
               <Text style={{}}>Make Available</Text>
             </Button>
           </Right>

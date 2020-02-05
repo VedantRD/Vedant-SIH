@@ -25,7 +25,7 @@ export class WarehouseDetails extends Component {
 
                 <Content>
                     <Card>
-                        <Image source={require('../../assets/warehouses/ware2.jpg')} style={{ height: 250, width: '100%' }} />
+                        <Image source={require('../../assets/warehouses/ware1.jpg')} style={{ height: 250, width: '100%' }} />
                         <CardItem bordered style={{ justifyContent: 'flex-end' }}>
                             <Left>
                                 <Button transparent>
@@ -61,9 +61,9 @@ export class WarehouseDetails extends Component {
                         </CardItem>
                         <CardItem>
                             <Body>
-                                <Text style={{ fontSize: 17, paddingBottom: 4 }}>Flooring : {item.flooring}</Text>
+                                <Text style={{ fontSize: 17, paddingBottom: 4 }}>Cold Storage Available : {item.coldStorage ? <Text style={{ fontSize: 17 }}>Yes</Text> : <Text style={{ fontSize: 18 }}>No</Text>}</Text>
+                                <Text style={{ fontSize: 17, paddingVertical: 4 }}>Flooring : {item.flooring}</Text>
                                 <Text style={{ fontSize: 17, paddingVertical: 4 }}>Roof Type : {item.roofType}</Text>
-                                <Text style={{ fontSize: 17, paddingTop: 4 }}>Cold Storage Available : {item.coldStorage ? <Text style={{ fontSize: 17 }}>Yes</Text> : <Text style={{ fontSize: 18 }}>No</Text>}</Text>
                             </Body>
                         </CardItem>
                     </Card>
