@@ -42,6 +42,7 @@ export default class GoodStatsCard extends Component {
           <Right style={{ flex: 1 }}>
             <Button success bordered onPress={() => Alert.alert('Sure ?', 'This will make the good available for buyer to buy')}>
               <Text style={{}}>Make Available</Text>
+
             </Button>
           </Right>
         </CardItem>
